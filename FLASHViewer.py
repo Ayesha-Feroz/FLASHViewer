@@ -22,11 +22,17 @@ def flashquantPages():
         Page("pages/FileUpload_FLASHQuant.py", "File Upload", "📁"),
         Page("pages/FLASHQuantViewer.py", "Viewer", "👀"),
     ])
-
-
+    
+def flashFDRPages():
+    show_pages([
+        Page("FLASHViewer.py", "FLASHViewer", "🏠"),
+        Page("pages/FileUpload_FLASHFDR.py", "File Upload", "📁"),
+        Page("pages/FLASHFDRViewer.py", "Viewer", "👀"),
+    ])
 page_names_to_funcs = {
     "FLASHDeconv": flashdeconvPages,
     "FLASHQuant": flashquantPages,
+    "FLASHFDR": flashFDRPages,
 }
 
 
